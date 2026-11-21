@@ -1,0 +1,235 @@
+.account-page {
+  min-height: 65vh;
+  padding: 78px 7% 100px;
+  background: #f2f8fc;
+}
+
+.account-panel {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: clamp(26px, 5vw, 52px);
+  background: #fffdfb;
+  box-shadow: 0 12px 40px rgba(75, 41, 40, 0.08);
+}
+
+.account-auth-panel {
+  width: min(100%, 520px);
+}
+
+.account-eyebrow {
+  color: #7295ad;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.account-panel h1 {
+  margin: 13px 0;
+  color: #4b2928;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 5vw, 48px);
+  font-weight: 400;
+}
+
+.account-panel > p,
+.account-welcome > p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.account-auth-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.account-auth-form label {
+  margin-top: 7px;
+  color: #563b38;
+  font-size: 12px;
+}
+
+.account-auth-form input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cfdeea;
+  background: #fffdfb;
+  color: #563b38;
+  font: inherit;
+}
+
+.account-auth-form input:focus {
+  outline: 2px solid #7295ad;
+  outline-offset: 1px;
+}
+
+.password-hint {
+  color: #806b68;
+  font-size: 11px;
+}
+
+.account-auth-form > button,
+.account-primary-link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 14px 20px;
+  border: 0;
+  background: #4b2928;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.account-auth-form > button:hover,
+.account-primary-link:hover {
+  background: #301b1b;
+}
+
+.account-auth-form > button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.account-switch {
+  margin-top: 22px;
+  color: #806b68;
+  font-size: 12px;
+}
+
+.account-switch button,
+.account-logout {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #4b2928;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.account-status {
+  color: #8b3c37;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.account-primary-link {
+  margin-top: 0;
+}
+
+.account-logout {
+  color: #806b68;
+  font-size: 11px;
+}
+
+.orders-section {
+  margin-top: 50px;
+  padding-top: 32px;
+  border-top: 1px solid #cfdeea;
+}
+
+.orders-heading,
+.order-card-heading,
+.order-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.orders-heading h2 {
+  margin-top: 7px;
+  color: #4b2928;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.orders-heading > a {
+  color: #806b68;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.orders-empty {
+  margin-top: 25px;
+  padding: 25px;
+  background: #f2f8fc;
+  color: #806b68;
+  font-size: 13px;
+}
+
+.orders-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.order-card {
+  padding: 20px;
+  border: 1px solid #cfdeea;
+  background: #fffdfb;
+}
+
+.order-card-heading > div > span {
+  color: #4b2928;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.order-card-heading p,
+.order-card-items p,
+.order-card-footer span {
+  margin-top: 5px;
+  color: #806b68;
+  font-size: 11px;
+}
+
+.order-card-heading > strong {
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #f2f8fc;
+  color: #4b2928;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.order-card-items {
+  margin: 15px 0;
+}
+
+.order-card-footer {
+  padding-top: 12px;
+  border-top: 1px solid #cfdeea;
+}
+
+.order-card-footer strong {
+  color: #4b2928;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .account-page {
+    padding: 54px 6% 70px;
+  }
+
+  .orders-heading {
+    align-items: flex-start;
+  }
+
+  .orders-heading > a {
+    padding-top: 5px;
+    text-align: right;
+  }
+}

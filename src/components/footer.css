@@ -1,0 +1,51 @@
+
+.luna-footer {
+  background: #301b1b;
+  color: white;
+  padding: 55px 8% 25px;
+  text-align: center;
+}
+
+.luna-footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-links {
+  margin: 30px 0;
+}
+
+.footer-links a {
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #d9eaf5;
+}
+
+.luna-footer p {
+  margin: 10px 0;
+}
+
+.footer-copyright {
+  margin-top: 28px !important;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  .footer-links {
+    gap: 15px;
+  }
+}

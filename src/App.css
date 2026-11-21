@@ -1,0 +1,261 @@
+.luna-app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.announcement {
+  background: #4b2928;
+  color: #f2f8fc;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.role-paths {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 34px 7%;
+  background: #fffdfb;
+}
+
+.role-card {
+  display: block;
+  padding: 30px clamp(22px, 4vw, 48px);
+  border: 1px solid #cfdeea;
+  background: #f2f8fc;
+  color: #4b2928;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(75, 41, 40, 0.1);
+}
+
+.role-card > span {
+  color: #7295ad;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.role-card h2 {
+  margin: 10px 0;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 400;
+}
+
+.role-card p {
+  margin-bottom: 18px;
+  color: #644a47;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.role-card strong {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.role-card-seller {
+  background: #d9eaf5;
+  color: #4b2928;
+}
+
+.role-card-seller > span,
+.role-card-seller p {
+  color: #563b38;
+}
+
+.role-card-seller strong {
+  color: #4b2928;
+}
+
+.intro-section {
+  padding: 84px 7%;
+  text-align: center;
+  background: #f2f8fc;
+}
+
+.intro-section h2 {
+  margin-bottom: 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 400;
+  color: #4b2928;
+}
+
+.intro-section p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 2.1;
+}
+
+.luna-banner {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(48, 27, 27, 0.62), rgba(48, 27, 27, 0.62)),
+    url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600') center / cover;
+}
+
+.luna-banner small {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.luna-banner h2 {
+  margin: 16px 0 28px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 58px);
+  font-weight: 400;
+}
+
+.luna-banner a {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #d9eaf5;
+  color: #4b2928;
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.luna-banner a:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+.account-section {
+  display: flex;
+  justify-content: center;
+  padding: 90px 20px;
+  background: #f2f8fc;
+}
+
+.account-card {
+  width: min(100%, 520px);
+  padding: 45px;
+  background: #fffdfb;
+  box-shadow: 0 12px 40px rgba(75, 41, 40, 0.08);
+}
+
+.account-card > small {
+  color: #7295ad;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.account-card h2 {
+  margin: 12px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 5vw, 38px);
+  font-weight: 400;
+  color: #4b2928;
+}
+
+.account-card > p,
+.account-note {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.account-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.account-form > label:not(.notification-option) {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.account-form > input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cfdeea;
+  background: transparent;
+  color: #563b38;
+  font: inherit;
+}
+
+.notification-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.notification-option input {
+  flex: 0 0 auto;
+  margin-top: 5px;
+  accent-color: #4b2928;
+}
+
+.account-note {
+  color: #806b68;
+}
+
+.account-form button {
+  margin-top: 8px;
+  padding: 15px;
+  border: 0;
+  background: #4b2928;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.account-form button:hover {
+  background: #301b1b;
+}
+
+::selection {
+  background: #d9eaf5;
+  color: #4b2928;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .announcement {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .intro-section {
+    padding: 64px 7%;
+  }
+
+  .role-paths {
+    grid-template-columns: 1fr;
+    padding: 24px 6%;
+  }
+
+  .luna-banner {
+    min-height: 360px;
+  }
+
+  .account-section {
+    padding: 64px 16px;
+  }
+
+  .account-card {
+    padding: 30px 24px;
+  }
+}

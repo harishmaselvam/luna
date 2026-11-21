@@ -1,0 +1,74 @@
+
+.newsletter-section {
+  background: #fffdfb;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.newsletter-content > span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #7295ad;
+}
+
+.newsletter-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #4b2928;
+  margin: 20px 0;
+}
+
+.newsletter-content p {
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #cfdeea;
+  outline: none;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.newsletter-form button {
+  padding: 16px 25px;
+  background: #4b2928;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #301b1b;
+}
+
+@media (max-width: 500px) {
+  .newsletter-content h2 {
+    font-size: 34px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
